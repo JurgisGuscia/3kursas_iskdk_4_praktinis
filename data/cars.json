@@ -1,0 +1,123 @@
+
+[
+  {
+    "id": 1,
+    "name": "BMW 5 serija",
+    "image": "./img/bmw.png",
+    "monthlyPrice": 489,
+    "fuel": "Dyzelinas",
+    "transmission": "Automatinė",
+    "powerKw": 210,
+    "powerHp": 286,
+    "popular": true,
+    "description": "BMW 5 serija – prabangus verslo klasės automobilis, kuriame dera elegancija, komfortas ir sportiškas vairavimo charakteris. Šis modelis vertinamas dėl tikslaus valdymo, stabilumo kelyje ir aukštos kokybės salono. Dyzelinis variklis suteikia gerą galios ir degalų sąnaudų balansą, todėl automobilis puikiai tinka tiek kasdienėms kelionėms mieste, tiek ilgiems atstumams. Erdvus salonas ir komfortiška važiuoklė užtikrina malonią kelionę vairuotojui bei keleiviams. BMW 5 serija – tinkamas pasirinkimas verslo profesionalams ir vairuotojams, ieškantiems reprezentatyvaus, dinamiško bei universalaus automobilio."
+  },
+  {
+    "id": 2,
+    "name": "Mercedes-Benz C",
+    "image": "./img/mercedes.png",
+    "monthlyPrice": 459,
+    "fuel": "Benzinas",
+    "transmission": "Automatinė",
+    "powerKw": 150,
+    "powerHp": 204,
+    "popular": true,
+    "description": "Mercedes-Benz C klasė – elegantiškas premium segmento automobilis, išsiskiriantis rafinuotu dizainu, komfortu ir maloniu vairavimo charakteriu. Kokybiškas salonas, ergonomiška vairuotojo vieta ir gerai apgalvota vidaus erdvė sukuria prabangią atmosferą kasdienėse kelionėse. Benzininis variklis užtikrina sklandų galios perdavimą, o automatinė pavarų dėžė leidžia patogiai važiuoti tiek mieste, tiek užmiestyje. C klasė ypač tinkama ieškantiems prestižinio, tačiau kasdieniam naudojimui praktiško automobilio. Tai geras pasirinkimas vertinantiems eleganciją, važiavimo komfortą ir Mercedes-Benz būdingą kokybės pojūtį."
+  },
+  {
+    "id": 3,
+    "name": "Audi A6",
+    "image": "./img/audi.png",
+    "monthlyPrice": 475,
+    "fuel": "Dyzelinas",
+    "transmission": "Automatinė",
+    "powerKw": 210,
+    "powerHp": 286,
+    "popular": true,
+    "description": "Audi A6 – modernus verslo klasės automobilis, pasižymintis santūriu dizainu, aukšto lygio komfortu ir užtikrintu važiavimu. Erdvus salonas, kokybiškos apdailos medžiagos ir gerai izoliuota keleivių erdvė sukuria malonią aplinką ilgoms kelionėms. Galingas dyzelinis variklis suteikia užtikrintą trauką, ypač važiuojant magistralėmis ar lenkiant. Audi A6 puikiai tinka vairuotojams, kurie daug keliauja, vertina stabilumą, komfortą ir praktiškumą. Tai universalus pasirinkimas tiek verslo reikmėms, tiek šeimos kelionėms, derinantis solidžią išvaizdą ir kasdienį funkcionalumą."
+  },
+  {
+    "id": 4,
+    "name": "Porsche 911",
+    "image": "./img/porsche.png",
+    "monthlyPrice": 1190,
+    "fuel": "Benzinas",
+    "transmission": "Automatinė",
+    "powerKw": 331,
+    "powerHp": 450,
+    "popular": false,
+    "description": "Porsche 911 – legendinis sportinis automobilis, garsėjantis išskirtine vairavimo dinamika, precizišku valdymu ir atpažįstamu dizainu. Galinėje dalyje montuojamas variklis, žemas svorio centras ir kruopščiai suderinta važiuoklė suteikia savitą vairavimo patirtį. Galingas benzininis variklis užtikrina įspūdingą pagreitį, o automatinė transmisija leidžia mėgautis greitu ir sklandžiu pavarų perjungimu. Nors pagrindinis šio modelio privalumas yra sportiškumas, Porsche 911 išlieka pakankamai universalus ir įprastoms kelionėms. Tai automobilis vairavimo entuziastams, vertinantiems inžinerinį tikslumą, išskirtinį charakterį ir sportinių automobilių tradicijas."
+  },
+  {
+    "id": 5,
+    "name": "Tesla Model 3",
+    "image": "./img/tesla.png",
+    "monthlyPrice": 399,
+    "fuel": "Elektra",
+    "transmission": "Automatinė",
+    "powerKw": 208,
+    "powerHp": 283,
+    "popular": true,
+    "description": "Tesla Model 3 – modernus elektrinis sedanas, sukurtas vertinantiems inovacijas, efektyvumą ir minimalistinį dizainą. Elektrinė pavara užtikrina tylų važiavimą, greitą reakciją į akceleratoriaus paspaudimą ir sklandų pagreitį. Paprastas salono dizainas bei didelis centrinis ekranas suteikia šiuolaikišką vairavimo patirtį. Elektromobilio eksploatacija gali būti ekonomiškesnė už tradicinio automobilio, ypač turint galimybę įkrauti jį namuose. Tesla Model 3 puikiai tinka kasdieniam važinėjimui, miesto kelionėms ir ilgesniems maršrutams, kai įkrovimas suplanuotas iš anksto. Tai patrauklus pasirinkimas norintiems pereiti prie elektrinio transporto ir mėgautis moderniomis technologijomis."
+  },
+  {
+    "id": 6,
+    "name": "Volvo XC60",
+    "image": "./img/volvo.png",
+    "monthlyPrice": 529,
+    "fuel": "Hibridas",
+    "transmission": "Automatinė",
+    "powerKw": 184,
+    "powerHp": 250,
+    "popular": true,
+    "description": "Volvo XC60 – premium klasės vidutinio dydžio SUV, kuriame dera skandinaviškas dizainas, komfortas ir praktiškumas. Volvo tradiciškai daug dėmesio skiria saugumui, ergonomikai ir vairuotojo bei keleivių gerovei. Aukštesnė sėdėjimo pozicija suteikia gerą kelio matomumą, o erdvus salonas ir praktiška bagažinė palengvina kasdienes šeimos keliones. Hibridinė pavara leidžia derinti vidaus degimo variklio privalumus su elektrifikacijos technologijomis, priklausomai nuo konkrečios hibridinės sistemos. XC60 tinka tiek miesto eismui, tiek ilgesnėms išvykoms. Tai puikus pasirinkimas šeimoms ir vairuotojams, kurie ieško saugaus, komfortiško ir elegantiško visureigio."
+  },
+  {
+    "id": 7,
+    "name": "Lexus RX",
+    "image": "./img/lexus.png",
+    "monthlyPrice": 599,
+    "fuel": "Hibridas",
+    "transmission": "Automatinė",
+    "powerKw": 230,
+    "powerHp": 313,
+    "popular": false,
+    "description": "Lexus RX – prabangus hibridinis SUV, išsiskiriantis aukštu komforto lygiu, rafinuotu dizainu ir sklandžiu važiavimu. Šis modelis ypač vertinamas dėl tylaus salono, kokybiškų apdailos medžiagų ir patogios sėdėjimo pozicijos. Hibridinė sistema sujungia benzininio ir elektrinio variklių veikimą, todėl leidžia efektyviau išnaudoti energiją, ypač važiuojant miesto sąlygomis. Erdvus salonas ir praktiška bagažo erdvė suteikia patogumo kasdienėms bei šeimos kelionėms. Lexus RX skirtas vairuotojams, kurie vertina ramų, komfortišką važiavimą, patikimumo reputaciją ir prabangų automobilį be ryškaus sportiškumo akcento."
+  },
+  {
+    "id": 8,
+    "name": "Range Rover Sport",
+    "image": "./img/range.png",
+    "monthlyPrice": 899,
+    "fuel": "Dyzelinas",
+    "transmission": "Automatinė",
+    "powerKw": 221,
+    "powerHp": 300,
+    "popular": false,
+    "description": "Range Rover Sport – prabangus SUV, derinantis išskirtinį dizainą, aukštą komforto lygį ir visureigiams būdingą universalumą. Įspūdinga išvaizda, aukšta sėdėjimo pozicija ir kokybiškas salonas suteikia reprezentatyvumo bei patogumo. Galingas dyzelinis variklis pasižymi gera trauka, kuri naudinga tiek kasdienėse kelionėse, tiek važiuojant ilgesniais maršrutais. Range Rover Sport sukurtas patogiai judėti asfaltuotais keliais, tačiau modelio konstrukcija taip pat orientuota į važiavimą sudėtingesnėmis sąlygomis. Tai tinkamas pasirinkimas ieškantiems erdvaus, prabangaus automobilio, kuris suderina komfortą, solidų charakterį ir įvairiapusiškumą."
+  },
+  {
+    "id": 9,
+    "name": "Volkswagen Golf GTI",
+    "image": "./img/wolksvagen.png",
+    "monthlyPrice": 349,
+    "fuel": "Benzinas",
+    "transmission": "Automatinė",
+    "powerKw": 180,
+    "powerHp": 245,
+    "popular": true,
+    "description": "Volkswagen Golf GTI – sportiškas hečbekas, garsėjantis puikiu kasdienio praktiškumo ir vairavimo malonumo deriniu. Dinamiškas benzininis variklis, tikslus valdymas ir sportiškesnė važiuoklė suteikia energingą vairavimo patirtį. Kompaktiški matmenys palengvina manevravimą mieste ir parkavimą, tačiau automobilis išlieka pakankamai praktiškas kasdieniams poreikiams. Penkių durų kėbulas ir universali bagažo erdvė leidžia patogiai naudoti automobilį ne tik laisvalaikiui, bet ir įprastoms kelionėms. Golf GTI yra geras pasirinkimas vairuotojams, norintiems sportinio charakterio neatsisakant praktiškumo, komforto ir universalumo."
+  },
+  {
+    "id": 10,
+    "name": "Ford Mustang GT",
+    "image": "./img/mustang.png",
+    "monthlyPrice": 699,
+    "fuel": "Benzinas",
+    "transmission": "Automatinė",
+    "powerKw": 331,
+    "powerHp": 450,
+    "popular": false,
+    "description": "Ford Mustang GT – amerikietiškas sportinis automobilis, išsiskiriantis agresyviu dizainu, galingu V8 varikliu ir charakteringu jo skambesiu. Galinių varančiųjų ratų koncepcija bei didelė variklio galia suteikia emocingą vairavimo patirtį. Mustang GT ypač patrauklus vairuotojams, kurie vertina klasikinę amerikietiškų sportinių automobilių dvasią ir išskirtinumą kelyje. Automatinė pavarų dėžė leidžia patogiau naudoti automobilį kasdien, tačiau jo stiprioji pusė išlieka dinamiškas vairavimas. Tai puikus pasirinkimas automobilių entuziastams, ieškantiems įspūdingo dizaino, galingo variklio ir vairavimo emocijų."
+  }
+]

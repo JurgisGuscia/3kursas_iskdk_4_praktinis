@@ -1,0 +1,93 @@
+.controlButtonWrapper{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+
+    .switchWrapper{
+        width: 110px;
+        height: 35px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            width: 20px;
+            height: 20px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            inset: 0;
+            background: var(--midBackground);
+            border-radius: 34px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .slider::before {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 4px;
+            bottom: 4px;
+            background: white;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .switch input:checked + .slider {
+            background: var(--popularBackground);
+        }
+
+        .switch input:checked + .slider::before {
+            transform: translateX(26px);
+        }
+
+        .switch input:focus-visible + .slider {
+            outline: 2px solid #007bff;
+            outline-offset: 3px;
+        }
+    }
+    
+
+    .showGame{
+        width: 30px;
+        height: 30px;
+        background: var(--grayBackground);
+        border: solid 1px var(--border);
+        border-radius: 5px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        img{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

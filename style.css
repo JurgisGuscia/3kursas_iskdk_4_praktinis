@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("./components/navBar/navBar.css");
+@import url("./components/header/header.css");
+@import url("./components/whyUs/whyUs.css");
+@import url("./components/calculator/calculator.css");
+@import url("./components/contactUs/contactUs.css");
+@import url("./components/whyUsDash/whyUsDash.css");
+@import url("./components/footer/footer.css");
+@import url("./components/newsLetter/newsLetter.css");
+@import url("./components/carCards/carCards.css");
+@import url("./components/priceComparison/priceComparison.css");
+@import url("./components/aboutUs/aboutUs.css");
+@import url("./components/contacts/contacts.css");
+@import url("./components/privacyPolicy/privacyPolicy.css");
+@import url("./components/carInfo/carInfo.css");
+@import url("./components/controlButtons/controlButtons.css");
+@import url("./components/game/game.css");
+
+:root{
+    --baseWidth: 1200px;
+    --background :#fcfcfc;
+    --grayBackground :#f3f6fb;
+    --blueBackground: #eaf3fc;
+    --rowBackground1: #e4f0fe;
+    --rowBackground2: #f9fbfa;
+    --midBackground: #233040;
+    --popularBackground: #0e1725;
+    --darkBackground: #081321;
+    --darkShadow: #030d16;
+    --whiteText: #fff;
+    --lightText: #c3c5ca;
+    --lighterText : #728095;
+    --textColor: #1d2228;
+    --accent: #146ded;
+    --border: #edf3ff;
+    --darkBorder: #182535;
+    --gameExitFiler: invert(0);
+
+    --gameBackground1: #728095;
+    --gameBackground2: #f9fbfa;
+    --gameBorder: #182535;
+}   
+
+[data-theme="dark"] {
+    --background : #081321;
+    --border: #182535;
+    --grayBackground :#081321;
+    --blueBackground: #233040;
+    --textColor: #fff;
+    --rowBackground1: #233040;
+    --rowBackground2: #182535;
+    --gameExitFiler: invert(1);
+    --gameBackground1: #081321;
+    --gameBackground2: #233040;
+    --gameBorder: #182535;
+}
+
+[data-theme="dark"] .switchWrapper img{
+    filter: invert(1);
+}
+
+[data-theme="dark"] .showGame img{
+    filter: invert(1);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: var(--textColor);
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--background);
+
+}
+
+footer{
+    background-color: var(--darkBackground);
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media (max-width: 767px) {
+        /* phones */
+        height: auto;
+    }
+}
+
+.bodyWrapper{
+    width: var(--baseWidth);
+    margin-top: 30px;
+    display: flex;
+    flex: flow nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+
+    @media (max-width: 767px) {
+        /* phones */
+        width: 400px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        /* tables */
+        width: 768px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        /* laptops */
+        width: 992px;
+        
+    }
+}
+
+.bodyContentWrapper{
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (max-width: 767px) {
+        /* phones */
+        width: 100%;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        /* tables */
+        width: 100%;
+    }
+}
+
+.bodySidebar{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width: 767px) {
+        /* phones */
+        width: 100%;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        /* tables */
+        width: 100%;
+    }
+}
+
+.backDrop{
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hideBackDrop{
+    display: none;
+}
+
+
+
+.contactsFormModal{
+    width: 400px;
+    z-index: 200;
+    background-color: var(--background);
+    border: solid 1px var(--darkBorder);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+
+    h1{
+        width: 300px;
+
+        span{
+            color: var(--accent);
+        }
+    }
+
+    h3{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .formDataOutput{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+
+        .formOutputLabel{
+            display: inline-block;
+            width: 150px;
+        }
+
+        .formOutputContent{
+            display: inline-block;
+            width: 220px;
+            overflow: hidden;
+        }
+
+        .formOutputContentArea{
+            display: flex;
+            width: 220px;
+            max-height: 110px;
+            height: auto;
+            overflow-y: auto;
+            overflow-wrap: anywhere;
+        }
+    }
+
+    .confirmForm{
+        width: 100%;
+        padding: 15px;
+        background-color: var(--accent);
+        color: var(--whiteText);
+        border: none;
+        border-radius: 7px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+} 
+
+.hide{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

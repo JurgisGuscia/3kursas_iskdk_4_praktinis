@@ -1,0 +1,81 @@
+.privacyPolicyContent{
+    width: 100%;
+    border: solid var(--border) 2px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+
+    h1{
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .subtext{
+        font-size: 0.8rem;
+    }
+
+    p{
+        font-size: 0.8rem;
+    }
+
+    ol{
+        list-style: none;
+        counter-reset: num;
+        width: 100%;
+
+        .orderedListLi{
+            counter-increment: num;
+            font-weight: bold;
+            font-size: 1.5rem;
+            position: relative;
+            border-bottom: solid var(--border) 3px;
+            width: 100%;
+            padding-bottom: 20px;
+            margin-top: 40px;
+
+            &::before{
+                content: counter(num) ". ";
+            }
+
+            p{
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-size: 0.8rem;
+                font-weight: normal;
+            }
+
+            ul{
+                position: relative;
+                left: 40px;
+
+                @media (max-width: 767px) {
+                    /* phones */
+                    width: 320px;
+                }
+
+                @media (min-width: 768px) and (max-width: 991px) {
+                    /* tables */
+                    
+                }
+
+                @media (min-width: 992px) and (max-width: 1199px) {
+                    /* laptops */
+                    
+                }
+
+                .unorderedListLi{
+                    font-weight: normal;
+                    font-size: 1rem;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+
+    }
+
+}

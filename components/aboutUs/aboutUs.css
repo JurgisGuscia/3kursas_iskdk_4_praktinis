@@ -1,0 +1,376 @@
+.aboutUsContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        @media (max-width: 767px) {
+            /* phones */
+            width: 100%;
+        }
+
+        h3{
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        h1{
+            font-weight: 800;
+            font-size: 2.5rem;
+            width: 570px;
+
+            @media (max-width: 767px) {
+                /* phones */
+                font-size: 1.5rem;
+                width: 100%;
+            }
+        }
+
+        p{
+            font-size: 1.3rem;
+            width: 700px;
+            margin-top: 30px;
+            color: var(--textColor);
+
+            @media (max-width: 767px) {
+                /* phones */
+                width: 100%;
+                font-size: 0.8rem;
+            }
+
+            @media (min-width: 992px) and (max-width: 1199px) {
+                /* laptops */
+                width: 100%;
+            }    
+        }
+
+        .linkWrapper{
+            width: 100%;
+            display: flex;
+            flex: flow row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            gap:40px;
+            margin-top: 30px;
+
+            .callToAction{
+                background-color: var(--accent);
+                padding: 20px 30px;
+                border-radius: 10px;
+                color: var(--whiteText);
+                text-decoration: none;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                @media (max-width: 767px) {
+                    /* phones */
+                    width: 100%;
+                }
+
+                img{
+                    width: 15px;
+                    filter: invert(100%);
+                }
+            }
+
+            .linkToContacts{
+                text-decoration: none;
+                color: var(--accent);
+                font-weight: bold;
+
+                @media (max-width: 767px) {
+                    /* phones */
+                    display: none;
+                }
+                
+                .contactArrow{
+                    font-size: 1.5rem;
+                    margin-left: 5px;
+                }
+
+                img{
+                    width: 15px;
+                    
+                }
+            }
+        }
+    }
+
+    .statsDashboard{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 30px;
+        border-radius: 10px;
+        border: solid var(--border) 2px;
+
+        @media (max-width: 767px) {
+            /* phones */
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .statColumn{
+            width: 272px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 10px;
+
+            .leftSide{
+                height: 100%;
+                width: 100px;
+                padding-left: 20px;
+                padding-top: 20px;
+
+                .iconWrapper{
+                    background-color: var(--grayBackground);
+                    width: 55px;
+                    height: 55px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        filter: brightness(0) saturate(100%)
+                        invert(31%) sepia(99%) saturate(3500%)
+                        hue-rotate(211deg) brightness(103%) contrast(105%);  
+                    }
+                }
+            }
+
+            .rightSide{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                
+                h2{
+                    font-weight: 800;
+                    font-size: 2rem;
+                }
+
+                h3{
+                    font-weight: 800;
+                    font-size: 1.1rem;
+                }
+
+                p{
+                    margin-top: 20px;
+                    font-size: 0.9rem;
+                    color: var(--lighterText);
+                }
+            }
+        }
+
+        .bordered{
+            border-left: solid var(--border) 2px;
+            border-right: solid var(--border) 2px;
+
+            @media (max-width: 767px) {
+                /* phones */
+                border: none;
+                border-top: solid var(--border) 2px;
+                border-bottom: solid var(--border) 2px;
+            }
+        }
+    }
+
+    .chooseUs{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        
+        h2{
+            font-weight: 800;
+            font-size: 1.8rem;
+
+            @media (max-width: 767px) {
+                /* phones */
+                 font-size: 1.4rem;
+            }
+        }
+
+        p{
+            
+            font-size: 1.1rem;
+            width: 100%;
+            color: vra(--textColor);
+
+            @media (max-width: 767px) {
+                /* phones */
+                 font-size: 0.8rem;
+            }
+        }
+    }
+    
+    .benefitsWrapper{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 20px;
+
+        @media (max-width: 767px) {
+            /* phones */
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .benefitCard{
+            width: 30%;
+            border: solid var(--border) 2px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 20px;
+
+            @media (max-width: 767px) {
+                /* phones */
+                width: 100%;
+            }
+
+            .iconWrapper{
+                background-color: var(--grayBackground);
+                width: 55px;
+                height: 55px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    filter: brightness(0) saturate(100%)
+                    invert(31%) sepia(99%) saturate(3500%)
+                    hue-rotate(211deg) brightness(103%) contrast(105%);
+                }
+            }
+
+            h3{
+                margin-bottom: 15px;
+                font-weight: bold;
+
+                @media (min-width: 992px) and (max-width: 1199px) {
+                    /* laptops */
+                    font-size: 0.9rem;
+                }
+            }
+
+            p{
+                font-size: 0.9rem;
+                width: 190px;
+
+                @media (max-width: 767px) {
+                    /* phones */
+                    width: 100%;
+                }
+
+                @media (min-width: 992px) and (max-width: 1199px) {
+                    /* laptops */
+                    width: 100%;
+                    height: 120px;
+                }
+            }
+        }
+    }
+
+    .ourGoal{
+        margin-top: 20px;
+        border-radius:10px;
+        overflow: hidden;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 300px;
+
+
+        @media (max-width: 767px) {
+            /* phones */
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+        }
+
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            /* tables */
+            width: 100%;
+        }
+
+        .leftSide{
+            width: 500px;
+            height: inherit;
+            background-position: center;
+            background-size: cover;
+            background-image: url("../../img/cars.png");
+
+            @media (max-width: 767px) {
+                /* phones */
+                width: 100%;
+                height: 300px;
+            }
+
+
+            @media (min-width: 992px) and (max-width: 1199px) {
+                /* laptops */
+                width: 60%;
+            }
+        }
+
+        .rightSide{
+            width: 315px;
+            background-color: var(--grayBackground);
+            height: 100%;
+            padding: 50px 30px;
+
+            @media (max-width: 767px) {
+                /* phones */
+                width: 100%;
+                height: auto;
+            }
+
+
+            @media (min-width: 992px) and (max-width: 1199px) {
+                /* laptops */
+                width: 40%;
+            }
+
+            h2{
+                width: 250px;
+                font-size: 1.7rem;
+                font-weight: 800;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

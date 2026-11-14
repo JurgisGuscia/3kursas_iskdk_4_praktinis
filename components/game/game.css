@@ -1,0 +1,136 @@
+.gameWindow{
+  
+    position: fixed;
+    z-index: 400;
+    top:60px;
+    background-color: var(--background);
+    border: solid 2px var(--border);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+
+    .controlRow{
+        width: 100%;
+        height: 50px;
+        border-bottom: 2px solid var(--border);
+        position: relative;
+
+        .closeGame{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            img{
+                width: 15px;
+                filter: var(--gameExitFiler);
+            }
+        }
+
+        .newGameButton{
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            top: 5px;
+            left: calc(50% - 18px);
+
+            &:hover{
+                cursor: pointer;
+                border: solid 2px var(--border);
+                border-radius: 10px;
+            }
+
+            img{
+                width: 100%;
+                filter: var(--gameExitFiler);
+            }
+        }
+        .levelControls{
+            position: absolute;
+            top: 13px;
+            left: calc(50% - 110px);
+            .levelChange{
+                color: black;
+            }
+        }
+        
+    }
+
+    .gameField{
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+        grid-auto-rows: max-content;
+        align-content: start;
+        gap: 0px;
+        
+        .gameFieldCell{
+            border: solid var(--gameBorder) 1px;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--textColor);
+            user-select: none;
+            background-color: var(--gameBackground1);
+            &:hover{
+                cursor: pointer;
+
+            }
+
+            img{
+                width: 20px;
+                filter: var(--gameExitFiler);
+            }
+            
+        }
+
+        .revealedFieldCell{
+            border: solid var(--gameBorder) 1px;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--textColor);
+            user-select: none;
+            background-color: var(--gameBackground2);
+
+            img{
+                width: 20px;
+                filter: var(--gameExitFiler);
+            }
+        }
+    }
+    
+    .gameOverScreen{
+        position: absolute;
+        z-index: 500;
+        top: 20%;
+        height: 420px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        color: var(--textColor);
+        user-select: none;
+    }
+
+    .hidden{
+        display: none;
+    }
+}
+
+.off{
+    display: none;
+}
